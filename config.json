@@ -1,5 +1,5 @@
 {
-  "version_code": 421,
+  "version_code": 45,
   "api_endpoints": {
     "calendar_api": "https://example.com/api/v1/calendar",
     "rashifal_api": "https://example.com/api/v1/rashifal"
