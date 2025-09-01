@@ -3,13 +3,14 @@ name: Purge jsDelivr Cache
 on:
   push:
     branches:
-      - main
+      - main   # main ব্রাঞ্চে push হলে রান হবে
 
 jobs:
   purge:
     runs-on: ubuntu-latest
     steps:
-      - name: Purge jsDelivr cache for config.json
+      - name: Purge jsDelivr Cache
         run: |
           echo "Purging jsDelivr cache..."
-          curl -i "https://purge.jsdelivr.net/gh/kajalmondal661/bangla-calendar-config@main/config.json"
+          curl -s "https://purge.jsdelivr.net/gh/kajalmondal661/bangla-calendar-config@main/config.json"
+          curl -s "https://purge.jsdelivr.net/gh/kajalmondal661/bangla-calendar-config@main/*"
