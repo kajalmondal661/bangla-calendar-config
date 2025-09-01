@@ -1,0 +1,12 @@
+{
+  "version_code": 1,
+  "api_endpoints": {
+    "calendar_api": "https://example.com/api/v1/calendar",
+    "rashifal_api": "https://example.com/api/v1/rashifal"
+  },
+  "features": {
+    "enable_ads": true,
+    "show_weather": false
+  },
+  "last_update": "2025-09-01"
+}
